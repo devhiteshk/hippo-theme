@@ -1,0 +1,7 @@
+node_modules/
+/theme/
+/tests/
+bin/
+package-lock.json
+known_issues.md
+README.md

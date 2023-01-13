@@ -1,0 +1,70 @@
+{
+	"name": "theme-hippo",
+	"version": "2.24.1",
+	"displayName": "Hippo Official",
+	"homepage": "hiteshk.dev/hippo-theme",
+	"description": "Official Hippo Theme. A custom tweaked Dark Theme.",
+	"publisher": "devHiteshK",
+	"license": "MIT",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"package": "vsce package -o ./bin/hippo.vsix",
+		"vscode:prepublish": "npm run build",
+		"vsce-publish": "vsce publish"
+	},
+	"maintainers": [
+		"Hitesh < me@hiteshk.dev >"
+	],
+	"contributors": [
+		"Dracula Team"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/devhiteshk/Hippo-Theme.git"
+	},
+	"bugs": {
+
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"hippo",
+		"dark",
+		"theme",
+		"color-theme"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#3c4557",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Hippo",
+				"uiTheme": "vs-dark",
+				"path": "./theme/hippo.json"
+			},
+			{
+				"label": "Hippo Soft",
+				"uiTheme": "vs-dark",
+				"path": "./theme/hippo-soft.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"js-yaml": "^4.1.0",
+		"prettier": "^2.5.1",
+		"tinycolor2": "^1.4.2",
+		"vsce": "^2.5.1"
+	},
+	"__metadata": {
+		"publisherDisplayName": "Hippo Theme"
+
+	}
+}
