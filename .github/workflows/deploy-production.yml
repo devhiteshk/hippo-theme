@@ -1,0 +1,13 @@
+name: Build and Deploy Production
+on: [push]
+
+jobs:
+    my_build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checking out code
+          uses: actions/checkout@master
+        - name: Process
+          run: |
+            echo "Production is running"
+
