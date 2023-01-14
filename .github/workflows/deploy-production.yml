@@ -1,5 +1,5 @@
 name: Build and Deploy Production
-on: [push]
+on: [push, pull_request]
 
 jobs:
     my_build:
@@ -7,7 +7,17 @@ jobs:
       steps:
         - name: checking out code
           uses: actions/checkout@master
+        - name: install node
+          uses: actions/setup-node@v3
+          with:
+            node-version: 16
+            cache: 'npm'
+
         - name: Process
           run: |
             echo "Production is running"
+            npm install
+            npm run package
+
+
 
