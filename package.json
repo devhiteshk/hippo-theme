@@ -23,9 +23,7 @@
 		"type": "git",
 		"url": "https://github.com/devhiteshk/Hippo-Theme.git"
 	},
-	"bugs": {
-
-	},
+	"bugs": {},
 	"engines": {
 		"vscode": "^1.13.0"
 	},
