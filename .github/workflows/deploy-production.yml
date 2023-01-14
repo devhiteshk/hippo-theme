@@ -18,6 +18,3 @@ jobs:
             echo "Production is running"
             npm install
             npm run package
-
-
-

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.fade-in-image {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-image {
+    width: 650px;
+}
+
+.hero-content {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+nav {
+    padding: 10px 210px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-name {
+    margin-left: 30px;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.download-button {
+    margin-top: 10px;
+}
+
+.fork-me {
+    font-weight: 500;
+    padding-left: 5px;
+}
+@media screen and (min-width: 1280px) {
+    .hero-image {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        padding: 10px 0px;
+        justify-content: center;
+    }
+    .logo {
+        margin-right: 10px;
+    }
+    .logo-name {
+        margin-left: 15px;
+    }
+
+    .is-flex {
+        flex-direction: column;
+    }
+    .hero {
+        display: block;
+    }
+    .hero-content {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .hero-body {
+        margin: 0 0;
+        margin-top: 30px;
+        padding: 10px 5px;
+    }
+
+    .vs-code-img {
+        margin-top: 30px;
+    }
+}
