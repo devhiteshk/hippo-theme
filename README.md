@@ -24,9 +24,6 @@ Method 2:
 - `Choose .vsix file from downloads folder`
 - `Enjoy the Hippo Theme`
 
-## Credits
-
-Dracula theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/visual-studio-code/graphs/contributors).
 
 ## Contributing
 

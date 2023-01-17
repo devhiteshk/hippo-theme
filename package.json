@@ -1,23 +1,13 @@
 {
 	"name": "theme-hippo",
 	"version": "1.10.1",
-	"displayName": "Hippo Official",
+	"displayName": "Hippo",
+	"description": "A Modern VS Code Dark Theme Based on dracula dark theme",
 	"homepage": "hiteshk.dev/hippo-theme",
-	"description": "Official Hippo Theme. A custom tweaked Dark Theme.",
 	"publisher": "devHiteshK",
 	"license": "MIT",
-	"scripts": {
-		"build": "node ./scripts/build.js",
-		"lint": "node ./scripts/lint.js",
-		"package": "vsce package -o ./bin/hippo.vsix",
-		"vscode:prepublish": "npm run build",
-		"vsce-publish": "vsce publish"
-	},
 	"maintainers": [
 		"Hitesh < me@hiteshk.dev >"
-	],
-	"contributors": [
-		"Dracula Team"
 	],
 	"repository": {
 		"type": "git",
@@ -25,7 +15,7 @@
 	},
 	"bugs": {},
 	"engines": {
-		"vscode": "^1.13.0"
+		"vscode": "^1.74.0"
 	},
 	"categories": [
 		"Themes"
@@ -46,22 +36,17 @@
 			{
 				"label": "Hippo",
 				"uiTheme": "vs-dark",
-				"path": "./theme/hippo.json"
-			},
-			{
-				"label": "Hippo Soft",
-				"uiTheme": "vs-dark",
-				"path": "./theme/hippo-soft.json"
+				"path": "./themes/Hippo-color-theme.json"
 			}
 		]
 	},
-	"devDependencies": {
-		"js-yaml": "^4.1.0",
-		"prettier": "^2.8.3",
-		"tinycolor2": "^1.5.2",
-		"vsce": "^2.5.1"
+	"scripts":{
+		"package": "vsce package -o ./bin/hippo.vsix"
 	},
 	"__metadata": {
 		"publisherDisplayName": "Hippo Theme"
+	},
+	"dependencies": {
+		"vsce": "^2.15.0"
 	}
 }
